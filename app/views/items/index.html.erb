@@ -12,8 +12,10 @@
 <% end %>
  -->
 <h1>出品商品一覧</h1>
+<ul>
   <% @items.each do |item| %>
   <li><a href="/items/<%= item.id %>"><%= item.name %></a></li>
 <% end %>
+</ul>
 
 <%# erbコメント %>
